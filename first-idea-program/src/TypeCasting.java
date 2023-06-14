@@ -26,9 +26,22 @@ public class TypeCasting {
 //        byte b = 50;
 //        b = b * 2;
 
-        int number = 'a';
-        System.out.println(number); //give the ASII value of 'a'.
-        //unicode follows
-        System.out.println("こんにちは");
+//        int number = 'a';
+//        System.out.println(number); //give the ASCII value of 'a'.
+//        //unicode follows
+//        System.out.println("こんにちは");
+
+//        System.out.println(3 * 5.6);
+
+        byte b = 42;
+        char c ='a';
+        short s = 1024;
+        int i = 50000;
+        float f = 5.67f;
+        double d = 0.1234;
+        double result = (f * b) + (i / c) - (d * s);
+        // float + int - double = double
+        System.out.println((f * b) + " " +  (i / c) + " " + (d * s));
+        System.out.println(result);
     }
 }
